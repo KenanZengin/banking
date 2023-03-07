@@ -1,0 +1,30 @@
+.section8{
+    padding: 50px 0;
+    &-content{
+        display: flex;
+        .right{
+            flex: 0 0 auto;
+            width: 370px;
+            max-width: 100%;
+            span{
+                color: $site-txt-clr-5 ;
+                font-size: 1.1rem;
+            }
+        }
+        .left{
+            flex: 1 0 0;
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            max-width: 100%;
+            .accordion{
+                width: 600px;
+                &-header{
+                    button{
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}

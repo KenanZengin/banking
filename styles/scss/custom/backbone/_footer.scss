@@ -1,0 +1,50 @@
+.footer{
+    background-color: $site-bg-clr-2;
+    color: $site-txt-clr-3;
+    padding-top: 100px;
+    &-web-content{
+        display: flex;
+        .footerlogo{
+            flex: 2 0 0;
+            padding-right: 20px;
+            h3{
+                margin-bottom: 30px;
+            }
+            p{
+                padding-right: 40px;
+                
+            }
+        }
+        .learn,.company,.contact{
+            flex: 1 0 0;
+            h3{
+                margin-bottom: 30px;
+            }
+            ul{
+                padding-left: 0 !important;
+                li{
+                    padding-bottom: 15px ;
+                    a{
+                        color: $site-txt-clr-3 !important;
+                    }
+                }
+            }
+        }
+        .contact{
+            .social{
+                padding-top: 2px;
+                a{
+                    padding-right: 10px;
+                }
+            }
+        }
+        li,p,span{
+            font-size: 1.2rem;
+        }
+    }
+    .rights{
+        text-align: center;
+        border-top: 1px solid $site-border;
+        padding: 20px 0;
+    }
+}

@@ -1,0 +1,45 @@
+.header{
+    background-color: $site-bg-clr  ;
+    color: $site-txt-clr ;
+    width: 100%;
+    &-web{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        &-left,&-right{
+            flex:  0 0 auto;
+            width: 250px;
+            max-width: 100%;
+        }
+        &-center{
+            flex: 1 0 0%;
+            width: 100%;
+            max-width: 100%;
+            padding: 0 10px;
+            font-size: 1.1rem;
+        }
+        &-left{
+            .headerlogo{
+                width: 180px;
+            }
+        }
+        &-right{
+            .headbtns{
+                display: flex;
+                align-items: center;
+                text-align: right;
+                a:nth-child(2){
+                    border: 1px solid $site-txt-clr;
+                    padding: 8px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        a{
+            color: inherit !important;
+            padding: 0 20px;
+        }
+    }
+}

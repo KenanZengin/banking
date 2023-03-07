@@ -1,0 +1,41 @@
+.section4{
+    padding: 20px 0;
+    background-color: $site-bg-clr-3  ;
+    &-content{
+        display: flex;
+        align-items: center;
+        &-left{
+            padding: 0 100px;
+            p{
+                padding: 20px 0;
+                color: $site-txt-clr-4 ;
+            }
+            .dvntg{
+                ul{
+                    li{
+                        position: relative;
+                        font-size: 1.5rem;
+                        margin-bottom: 5px;
+                        padding-left: 10px;
+                        
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            background-image: url(#{$path-assets-url}/img/icons8.png#{$cache-busting});
+                            opacity: .7;
+                            left: -40px;
+                            top: 1px;
+                            bottom: 0px;
+                            width:35px;
+                            background-repeat: no-repeat;
+                            background-position-y: 50%;
+                            background-position-x: 0;
+                            
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

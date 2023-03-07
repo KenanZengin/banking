@@ -1,0 +1,15 @@
+.section7{
+    padding: 50px 0;
+    background-color: $site-bg-clr-3;
+    text-align: center;
+    .company{
+        padding: 50px 0 ;
+        .row{
+            margin-bottom: 20px;
+            .col{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
