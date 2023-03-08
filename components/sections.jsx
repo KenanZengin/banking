@@ -12,6 +12,7 @@ import Section8 from "./section8"
 const Sections = () => {
   return (
     <>
+    
         <Section1 />
         <Section2 />
         <Section3 />
@@ -20,6 +21,7 @@ const Sections = () => {
         <Section6 />
         <Section7 />
         <Section8 />
+
     </>
   )
 }

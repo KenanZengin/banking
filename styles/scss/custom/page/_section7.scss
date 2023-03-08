@@ -9,6 +9,10 @@
             .col{
                 display: flex;
                 align-items: center;
+                justify-content: center;
+                @include BootstrapMaxWidthResponsive(md){ 
+                    padding-bottom: 20px;
+                }
             }
         }
     }

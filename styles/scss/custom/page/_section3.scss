@@ -3,8 +3,14 @@
     &-content{
         display: flex;
         align-items: center;
+        @include BootstrapMaxWidthResponsive(md){ 
+            flex-direction: column;
+        }
         &-right{
             padding: 0 100px;
+            @include BootstrapMaxWidthResponsive(md){ 
+                text-align: center;
+            }
             p{
                 padding: 20px 0;
                 color: $site-txt-clr-4  ;

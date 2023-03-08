@@ -3,10 +3,17 @@
     padding: 120px 0;
     &-content{
         display: flex;
+        @include BootstrapMaxWidthResponsive(md){ 
+            flex-direction: column;
+            align-items: center;
+        }
         &-left{
-            flex: 0 0 auto;
+            flex: 0 0 auto; 
             width: 600px;
             max-width: 100%;
+            @include BootstrapMaxWidthResponsive(md){ 
+                text-align: center;
+            }
             .title{
                 h1{
                     letter-spacing: 3px;

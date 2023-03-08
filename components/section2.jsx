@@ -1,6 +1,4 @@
-import Link from 'next/link'
-import React from 'react'
-import { Container  , Card } from 'react-bootstrap'
+import { Container  , Card  , Row , Col} from 'react-bootstrap'
 
 const Section2 = () => {
   return (
@@ -14,30 +12,42 @@ const Section2 = () => {
                     </h2>
                 </div>
                 <div className="cards">
-                <Card >
-                    <Card.Body>
-                        <Card.Title>Legal & <br />regulatory</Card.Title>
-                        <Card.Link href="#">Read More</Card.Link>
-                    </Card.Body>
-                </Card>
-                <Card >
-                    <Card.Body>
-                        <Card.Title>Investment <br />management</Card.Title>
-                        <Card.Link href="#">Read More</Card.Link>
-                    </Card.Body>
-                </Card>
-                <Card >
-                    <Card.Body>
-                        <Card.Title>Investor<br />management</Card.Title>
-                        <Card.Link href="#">Read More</Card.Link>
-                    </Card.Body>
-                </Card>
-                <Card >
-                    <Card.Body>
-                        <Card.Title>Compliance</Card.Title>
-                        <Card.Link href="#">Read More</Card.Link>
-                    </Card.Body>
-                </Card>
+                    <Row xl={4} lg={3} md={2}>
+
+                    <Col>
+                        <Card >
+                        <Card.Body>
+                            <Card.Title>Legal & <br />regulatory</Card.Title>
+                            <Card.Link href="#">Read More</Card.Link>
+                        </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col>
+                        <Card >
+                            <Card.Body>
+                                <Card.Title>Investment <br />management</Card.Title>
+                                <Card.Link href="#">Read More</Card.Link>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col>
+                    <Card >
+                        <Card.Body>
+                            <Card.Title>Investor<br />management</Card.Title>
+                            <Card.Link href="#">Read More</Card.Link>
+                        </Card.Body>
+                    </Card>
+                    </Col>
+                    <Col>
+                        <Card >
+                            <Card.Body>
+                                <Card.Title>Compliance</Card.Title>
+                                <Card.Link href="#">Read More</Card.Link>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+
+                    </Row>
                 </div>
             </div>
 

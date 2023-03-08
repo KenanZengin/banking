@@ -2,6 +2,7 @@
     background-color: $site-bg-clr  ;
     color: $site-txt-clr ;
     width: 100%;
+
     &-web{
         display: flex;
         flex-wrap: wrap;
@@ -12,6 +13,9 @@
             flex:  0 0 auto;
             width: 250px;
             max-width: 100%;
+            @include BootstrapMaxWidthResponsive(lg){ 
+                width: 200px;
+            }
         }
         &-center{
             flex: 1 0 0%;
@@ -19,18 +23,37 @@
             max-width: 100%;
             padding: 0 10px;
             font-size: 1.1rem;
+            @include BootstrapMaxWidthResponsive(md){ 
+                .headnavigation{
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
         }
         &-left{
             .headerlogo{
                 width: 180px;
             }
+            @include BootstrapMaxWidthResponsive(sm){ 
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+            
         }
         &-right{
+            @include BootstrapMaxWidthResponsive(md){ 
+                display: none;
+            }
             .headbtns{
                 display: flex;
                 align-items: center;
                 text-align: right;
                 a:nth-child(2){
+                    @include BootstrapMaxWidthResponsive(lg){ 
+                        display: none;
+                    }
                     border: 1px solid $site-txt-clr;
                     padding: 8px;
                     border-radius: 10px;

@@ -7,6 +7,9 @@
         .footerlogo{
             flex: 2 0 0;
             padding-right: 20px;
+            @include BootstrapMaxWidthResponsive(md){ 
+                display: none;
+            }
             h3{
                 margin-bottom: 30px;
             }

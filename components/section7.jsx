@@ -12,13 +12,13 @@ const Section7 = () => {
                     <h2>Trusted by 12K+ businesses Company</h2>
                 </div>
                 <div className="company">
-                <Row md={4}>
+                <Row lg={4} md={2}>
                     <Col><Image src={img} /></Col>
                     <Col><Image src={img2} /></Col>
                     <Col><Image src={img} /></Col>
                     <Col><Image src={img2} /></Col>
                 </Row>
-                <Row md={4}>
+                <Row lg={4} md={2}>
                     <Col><Image src={img2} /></Col>
                     <Col><Image src={img} /></Col>
                     <Col><Image src={img2} /></Col>

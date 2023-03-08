@@ -4,19 +4,31 @@
     padding: 50px 0;
     .title{
         padding-bottom:80px ;
+        @include BootstrapMaxWidthResponsive(md){ 
+            text-align: center;
+        }
     }
     .cards{
         display: flex;
         justify-content: space-between;
+        @include BootstrapMaxWidthResponsive(xm){ 
+            padding: 0 50px;
+        }
         .card{
             background-color: $site-bg-clr-4  ;
             padding-right: 120px;
             padding-top:15px;
+            @include BootstrapMaxWidthResponsive(xl){ 
+                margin-bottom: 20px;
+            }
             .card-body{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 height: 300px;
+                @include BootstrapMaxWidthResponsive(sm){ 
+                    height: 200px;
+                }
                 .card-title{
                     font-size: 1.5rem;
                 }
