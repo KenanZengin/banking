@@ -1,3 +1,5 @@
-#### Bu projede banking websitesinin clonu yapılmıştır. Projeyi pcye indirmeniz için terminale "git clone https://github.com/KenanZengin/banking.git" yazmanız yeterli olucaktır.Daha sonra "npm run dev" diyerek projeyi localhost:3000 portunda çalıştırabilirsiniz.
-
+#### Tr : Bu projede banking websitesinin clonu yapılmıştır. 
 Projenin demosu : https://banking-lime.vercel.app/
+
+### En : In this project, the banking website has been cloned
+Demo of the project : https://banking-lime.vercel.app/
